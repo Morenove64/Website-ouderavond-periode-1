@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+		<title>Ouderavond </title>
+			<link rel="stylesheet" type="text/css" href="LWH kopie.css">
+			<link rel="icon" sizes="16x16 24x24 64x64" href="logo.jpg">
+			<link href="https://fonts.googleapis.com/css?family=Capriola" rel="stylesheet"> 
+ </head>
+
+<body class="bodybe">
+ <header class="banner">
+ <h1>Techniek College Rotterdam</h1>
+ </header>
+ 
+ <nav>
+ <ul> 
+ <li><a href="LWH kopie.html">Home</a></li>
+ <li><a href="Over de school.html">Over de school</a></li>
+ <li><a href="Over de opleiding.html">Over de opleiding</a></li>
+ <li><a href="Installatie MySQL.html">Installatie MySQL</a></li>
+ <li><a href="Over ons.html">Over ons</a></li>
+ <li><a href="Foto's.html">Foto's</a></li>
+ <li><a href="Beoordeling.html">Beoordelingsformulier</a></li>
+ </ul>
+ </nav>
+ 
+<main class="mainb">
+	<form name="reactieformulier" method="get" action="Antwoord.html">
+		<fieldset>
+			<legend>Gegevens </legend>
+				<p><label for="voornaam" class="naw" >voornaam: * </label>
+					<input required type="text" name="voornaam" placeholder="vul uw naam in">
+				<p><label for="achternaam" class="naw" >achternaam: * </label>
+					<input required type="text" name="achternaam" placeholder="vul uw naam in">
+				<p><label for="email" class="naw" >emailadres: * </label>
+					<input required type="email" name="email" placeholder="vul uw email in">
+				<p><label for="leeftijd" class="naw" >leeftijd: (min 8) </label>
+					<input type="number" name="leeftijd" min="8" max="100" step="1" value="18"> </p>
+		</fieldset>
+		
+		<fieldset>
+			<legend> Geslacht</legend>
+				<input type="radio" name="geslacht" value="man" checked> Man
+				<input type="radio"	name="geslacht" value="vrouw"> Vrouw
+		</fieldset>
+		
+		<fieldset>
+			<legend> Beoordeling</legend>
+				<textarea placeholder="Vul uw beoordeling in" name="beoordeling" rows="15" cols="60"></textarea>
+				<br>
+				<br>
+					<p><label for="pagina" class="be">Beste Pagina:</label>
+ 					<select name="pagina"> 
+						<option value="Home">Home</option>
+						<option value="Over de school">Over de school</option>
+						<option value="Over de opleiding">Over de opleiding</option>
+						<option value="Installatie MySQL">Installatie MySQL</option>
+						<option value="Over ons">Over ons</option>
+						<option value="Foto's">Foto's</option>
+						<option value="Beoordelingsformulier">Beoordelingsformulier</option>
+						
+					</select>
+					<br>
+					<br>
+						<label for="beoordeling2" class="be">Beoordeling hele site:</label>
+							<input type="range" list="Beoordeling2" name="Beoordeling2" min="1" max="10" value="5" step="1" oninput="waarde.value = Beoordeling2.value">
+							<output name="waarde" id="waarde">5</output>
+								<datalist id="Beoordeling2">
+									<option value="1">
+									<option value="2">
+									<option value="3">
+									<option value="4">
+									<option value="5">
+									<option value="6">
+									<option value="7">
+									<option value="8">
+									<option value="9">
+									<option value="10">
+								</datalist>
+							<br>
+							<br>
+						<label for="beoordeling3" class="be">Beoordeling Lay out:</label>
+							<input type="range" list="Beoordeling3" name="Beoordeling3" min="1" max="10" value="5" step="1" oninput="waarde2.value = Beoordeling3.value">
+							<output name="waarde2" id="waarde2">5</output>
+								<datalist id="Beoordeling3">
+									<option value="1">
+									<option value="2">
+									<option value="3">
+									<option value="4">
+									<option value="5">
+									<option value="6">
+									<option value="7">
+									<option value="8">
+									<option value="9">
+									<option value="10">
+								</datalist>
+		</fieldset> 
+		
+		<fieldset>
+			<legend> Tips</legend>
+				<textarea placeholder="Wat kan volgende keer beter" name="tips" rows="5" cols="65"></textarea>
+				<br><br>
+				<input type="submit" value="Submit"> <input type="reset" value="Reset">
+				
+		</fieldset>
+	</form>
+</main>
+
+
+
+<footer class="footerb">
+<p>Bekijk ook de officiële website:</p>
+<a href="https://www.techniekcollegerotterdam.nl">Techniek college Rotterdam</a>
+</footer>
+ 
+ 
+  </body>
+ </html>
